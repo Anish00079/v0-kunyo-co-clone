@@ -1,9 +1,10 @@
-import Image from "next/image"
 import Link from "next/link"
 import { Star } from "lucide-react"
+import GameImage from "./game-image"
 
 interface ImmersiveGameCardProps {
   image: string
+  gameSlug?: string
   title: string
   price: string
   rating?: number
@@ -13,6 +14,7 @@ interface ImmersiveGameCardProps {
 
 export default function ImmersiveGameCard({
   image,
+  gameSlug,
   title,
   price,
   rating = 4.5,
@@ -23,12 +25,7 @@ export default function ImmersiveGameCard({
     <Link href="#" className="group block">
       <div className="relative overflow-hidden rounded-lg bg-gradient-to-br from-gray-900 to-gray-800">
         <div className="relative aspect-square overflow-hidden">
-          <Image
-            src={image || "/placeholder.svg"}
-            alt={title}
-            fill
-            className="object-cover transition-transform duration-700 group-hover:scale-110"
-          />
+          {gameSlug ? <GameImage game={gameSlug} fill /> : <GameImage game="pubg" fill />}
           <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-80" />
 
           {isNew && (

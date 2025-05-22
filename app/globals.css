@@ -70,3 +70,34 @@ body {
     -webkit-text-stroke: 2px black;
   }
 }
+
+/* 3D Transform Styles */
+.perspective-\[1000px\] {
+  perspective: 1000px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+/* Animation for floating effect */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Parallax effect */
+.parallax {
+  transition: transform 0.2s cubic-bezier(0.2, 0.49, 0.32, 0.99);
+}

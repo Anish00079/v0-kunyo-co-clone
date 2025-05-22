@@ -20,7 +20,13 @@ export default function SplitHero() {
         onMouseLeave={() => setHoverLeft(false)}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-blue-900/30 to-purple-900/70 z-10" />
-        <Image src="/images/mobile-legends.png" alt="Mobile Games" fill className="object-cover" priority />
+        <Image
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-zgEdrqUr44hUF8gihv2u4gbPFzpyBa.png"
+          alt="Mobile Games"
+          fill
+          className="object-cover"
+          priority
+        />
         <div className="absolute inset-0 z-20 flex flex-col items-center justify-center p-8">
           <div className="text-center">
             <h2 className="text-orange-400 font-bold mb-4 tracking-wider">EXPLORE</h2>
@@ -47,7 +53,13 @@ export default function SplitHero() {
         onMouseLeave={() => setHoverRight(false)}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-purple-900/30 to-blue-900/70 z-10" />
-        <Image src="/images/steam-gift-card.png" alt="Gift Cards" fill className="object-cover" priority />
+        <Image
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-nJYW4qh8iDDLr5aCnbNYOqzRkMUnjg.png"
+          alt="Gift Cards"
+          fill
+          className="object-cover"
+          priority
+        />
         <div className="absolute inset-0 z-20 flex flex-col items-center justify-center p-8">
           <div className="text-center">
             <h2 className="text-orange-400 font-bold mb-4 tracking-wider">DISCOVER</h2>
